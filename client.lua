@@ -28,6 +28,11 @@ RegisterNUICallback('server', function(data)
     TriggerServerEvent(data.action, data.arg)
 end)
 
+
+RegisterNUICallback('close', function(data)
+    open = false
+end)
+
 function sendnotif(message)
     SetNotificationTextEntry("STRING")
     AddTextComponentString(message)
@@ -41,8 +46,14 @@ function CreateMenu(tab)
 	})
 end
 
+function CreateNewMenu(tab)
+    open = true
+    SendNUIMessage({
+        createNew = tab
+    })
+end
+
 function CloseMenu()
-    open = false
 	SendNUIMessage({
 		close = true
 	})

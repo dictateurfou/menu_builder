@@ -1,9 +1,68 @@
+/*  Dont touch this */
+
+
+body{
+	margin:0em;
+}
+
+/***********/
+
+/*font face*/
+@font-face {
+	font-family: 'pricedown';
+	src: url(font/pricedown.ttf);
+}
+
+@font-face {
+	font-family: 'Roboto-Medium';
+	src: url(font/Roboto-Medium.ttf);
+}
+
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url(font/Roboto-Regular.ttf);
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgba(24, 49, 82, 0.5);
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(185, 18, 27, 1);
+    background-color:rgba(185, 18, 27, 0.5);
+}
+
+/************/
+
+
+
+
+
+/* defaut théme */
+#container.defaut{
+	position:absolute;
+	top:1em;
+	left:0em;
+	width:20%;
+}
+
+
 ul.defaut{
 	list-style-type: none;
 	color:black;
 	padding:0;
 	margin:0;
-	width:20%;
+	width:100%;
 	max-height:330px;
 	overflow-y:scroll;
 }
@@ -23,7 +82,7 @@ h2.defaut{
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	background-color: #B9121B;
-	width:20%;
+	width:100%;
 	margin:0;
 	padding:0;
 	color:white;
@@ -32,29 +91,64 @@ h2.defaut{
 	font-size:3em;
 }
 
-
-
 .defaut.active{
 	background-color:white;
 	color:#B9121B;
 }
 
+/****************************/
 
-::-webkit-scrollbar {
-    width: 12px;
-    background-color: rgba(24, 49, 82, 0.5);
-    border-radius: 10px;
-}
- 
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    border-radius: 10px;
-}
- 
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(185, 18, 27, 1);
-    background-color:rgba(185, 18, 27, 0.5);
+
+/* defaut théme 2 */
+
+#container.defaut2{
+	position:absolute;
+	top:1em;
+	right:0em;
+	width:20%;
 }
 
+
+ul.defaut2{
+	list-style-type: none;
+	color:black;
+	padding:0;
+	margin:0;
+	width:100%;
+	max-height:330px;
+	overflow-y:scroll;
+}
+
+li.defaut2{
+	background-color:rgba(136, 159, 156, 0.7);
+	text-align: center;
+	color:#B9121B;
+	border-bottom:1px solid white;
+	padding-top: 0.5em;
+	padding-bottom:0.5em;
+	font-size:1.3em;
+	font-weight:bold;
+}
+
+h2.defaut2{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #B9121B;
+	width:100%;
+	margin:0;
+	padding:0;
+	color:white;
+	text-align: center;
+	border-bottom:1px solid white;
+	font-size:3em;
+}
+
+.defaut2.active{
+	background-color:white;
+	color:#B9121B;
+}
+
+
+
+/***********************/
 

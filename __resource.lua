@@ -11,4 +11,5 @@ client_script 'client.lua'
 exports {
     'CreateMenu',
     'CloseMenu',
+    'CreateNewMenu',
 }
